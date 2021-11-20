@@ -1,15 +1,11 @@
-<div bp="grid">
-    <div bp="offset-5@md 4@md 12@sm" class="progressbar-container">
-        <div class="progress-bar" style="width: 20%;">
-            <span class="sr-only">%</span>
-        </div>
-    </div>
-</div>
+<script>
+    export let progress = 0;
+</script>
 
 <style>
     .progressbar-container{
         margin: 20px 0;
-        border:spolid rgb(194,194,194) 1px;
+        border:solid rgb(194,194,194) 1px;
     }
 
     .progress-bar{
@@ -17,3 +13,11 @@
         background-color: rgb(77, 199,55);
     }
 </style>
+
+<div bp="grid">
+    <div bp="offset-5@md 4@md 12@sm" class="progressbar-container">
+        <div class="progress-bar" style="width: {progress}%;">
+            <span class="sr-only">%</span>
+        </div>
+    </div>
+</div>
