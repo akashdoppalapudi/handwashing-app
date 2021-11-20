@@ -10,7 +10,7 @@
 </script>
 
 <style>
-    h1 {
+    h1,h3 {
         text-align: center;
     }
 </style>
